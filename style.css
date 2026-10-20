@@ -1,0 +1,37 @@
+.container{
+    background-color: aqua;
+    display: grid;
+    grid-template-areas: 
+        "a a"
+        "b b"
+        "c d"
+        "e e"
+        "f f";
+    text-align: center;   
+}
+ 
+.a { grid-area: a; border: solid 1px; }
+.b { grid-area: b; border: solid 1px; }
+.c { grid-area: c; border: solid 1px; }
+.d { grid-area: d; border: solid 1px; }
+.e { grid-area: e; border: solid 1px; }
+.f { grid-area: f; border: solid 1px; }
+ 
+@media (min-width: 768px){
+    .container{
+       grid-template-areas: 
+        "a a a"
+        "b b b"
+        "c d e"
+        "f f f"; 
+    }
+}
+ 
+@media (min-width: 1200px){
+    .container{
+       grid-template-areas: 
+        "a a a a"
+        "b c d e"
+        "f f f f"; 
+    }
+}
